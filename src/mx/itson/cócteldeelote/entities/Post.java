@@ -4,6 +4,7 @@
  */
 package mx.itson.cócteldeelote.entities;
 
+import java.util.List;
 import mx.itson.cocteldeelote.enums.Categories;
 import mx.itson.cocteldeelote.enums.Reaction;
 
@@ -12,6 +13,13 @@ import mx.itson.cocteldeelote.enums.Reaction;
  * @author laura
  */
 public class Post {
+
+    /**
+     * @param replay the replay to set
+     */
+    public void setReplay(List <Replay> replay) {
+        this.replay = replay;
+    }
 
     /**
      * @return the content
@@ -56,20 +64,6 @@ public class Post {
     }
 
     /**
-     * @return the replay
-     */
-    public Replay getReplay() {
-        return replay;
-    }
-
-    /**
-     * @param replay the replay to set
-     */
-    public void setReplay(Replay replay) {
-        this.replay = replay;
-    }
-
-    /**
      * @return the reaction
      */
     public Reaction getReaction() {
@@ -98,7 +92,7 @@ public class Post {
     }
     private User user;
     private Date date;
-    private Replay replay;
+    private List <Replay> replay;
     private Reaction reaction;
     private Categories categorie;
     private String content;

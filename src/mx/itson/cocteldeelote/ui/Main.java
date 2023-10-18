@@ -65,18 +65,34 @@ public class Main {
         System.out.println("");
         System.out.println("Page: "+ page1.getName());
         System.out.println("");
-        for (Post p : page1.getPost()){
+        System.out.println(post1.getUser());
+        System.out.println("");
+        System.out.println(post1.getDate());
+        System.out.println("");
+        System.out.println(post1.getCategorie());
+        System.out.println("");
+        System.out.println(post1.getContent());
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Replay");
+        System.out.println(r1.getUser());
+        System.out.println("");
+        System.out.println(r1.getDate());
+        System.out.println("");
+        System.out.println(r1.getCategorie());
+        System.out.println("");
+        System.out.println(r1.getContent());
+        System.out.println("");
+        System.out.println("");
+        
+       /*for (Post p : posts){
             System.out.println(p.getUser()+" "+ p.getDate()+" "+p.getCategorie()+" "+p.getContent());
         }
         
-        for (Replay r : page1.getReplay()){
+        for (Replay r : replays){
             System.out.println(r.getUser()+" "+r.getDate()+" "+r.getCategorie()+" "+r.getContent()+" "+r.getReaction());
         }
         
-        
-        
-        
-        
-        
+        */
     }
 }
